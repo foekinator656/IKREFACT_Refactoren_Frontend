@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--        fx:controller="RequestController"-->
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@../css/master.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsleiden.ipsen2.bouncer.front.views.RequestNewView">
+   <children>
+      <HBox layoutX="-6.0" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox minHeight="500.0" minWidth="300.0" prefHeight="900.0" prefWidth="300.0" style="-fx-background-color: f7f8fc;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="300.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="65.0" translateY="30.0">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <GridPane prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: edeff4;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="0.0" prefWidth="9.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="59.5" />
+                        <ColumnConstraints maxWidth="226.5" minWidth="0.0" prefWidth="219.5" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="BASELINE_LEFT" depthTest="DISABLE" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="295.0" style="-fx-background-color: edeff4; -fx-border-radius: 0; -fx-background-radius: 0; -fx-border-width: 0;" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Button>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f3a304;" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" GridPane.columnIndex="2" />
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 24;" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/icons/dashboard_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <GridPane prefHeight="900.0" prefWidth="1300.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="420.0" prefWidth="350.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="250.0" prefWidth="250.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="550.0" minHeight="550.0" prefHeight="500.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Dashboard" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <VBox maxHeight="1.7976931348623157E308" prefHeight="250.0" prefWidth="100.0" style="-fx-border-color: e6e6e6; -fx-border-width: 2; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Pane prefHeight="90.0" prefWidth="866.0">
+                           <children>
+                              <Text layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request User &lt;id&gt;">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="emptyFieldsWarning" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: transparent;" text="U bent verplicht alle velden in te vullen." />
+                           </children>
+                        </Pane>
+                        <TextField fx:id="fName" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" promptText="Voornaam" style="-fx-background-color: f7f8fc; -fx-border-color: e6e6e6; -fx-border-radius: 10; -fx-background-radius: 10;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="lName" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" promptText="Achternaam" style="-fx-background-color: f7f8fc; -fx-border-color: e6e6e6; -fx-border-radius: 10; -fx-background-radius: 10;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="eMail" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" promptText="Email" style="-fx-background-color: f7f8fc; -fx-border-color: e6e6e6; -fx-border-radius: 10; -fx-background-radius: 10;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Text fill="#9e9e9e" strokeType="OUTSIDE" strokeWidth="0.0" text="Geboortedatum" />
+                        <DatePicker fx:id="dateOfBirth" prefHeight="30.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="35.0" />
+                           </VBox.margin>
+                        </DatePicker>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Afbeelding toevoegen">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#9e9e9e" strokeType="OUTSIDE" strokeWidth="0.0" text="De afbeelding mag maximaal 10MB zijn.&#10;Zorg ervoor dat uw gezicht goed in beeld is&#10;" />
+                        <HBox>
+                           <children>
+                              <Button fx:id="openFileButton" mnemonicParsing="false" onAction="#fileChooserWindow" prefHeight="34.0" prefWidth="102.0" text="Open bestand">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: e6e6e6; -fx-border-width: 2; -fx-border-style: segments(5,5,5,5); -fx-border-radius: 10; -fx-background-color: f7f8fc;">
+                                 <children>
+                                    <Text fx:id="fileNameDisplay" fill="#a1a1a1" layoutX="18.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voorbeeld.png" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Text fx:id="fieldErrorPrompt" fill="#d14b4b" strokeType="OUTSIDE" strokeWidth="0.0" translateY="-10.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="sendRequestButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getRequestInput" prefHeight="45.0" prefWidth="152.0" text="STUUR REQUEST" textFill="#f3a304">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: e6e6e6; -fx-border-width: 2; -fx-border-radius: 20;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Pane prefHeight="62.0" prefWidth="389.0">
+                           <children>
+                              <Text layoutX="-1.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hoe werkt het?" textOrigin="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. &#9;Download de onderstaande QR-code&#10;2. &#9;Print de QR-code uit&#10;3. &#9;Maak een selfie met de uitgeprinte QR-code goed in beeld&#10;4.&#9;Upload de  QR code via het aanvraag-formulier" />
+                        <ImageView fx:id="qrCodeView" blendMode="MULTIPLY" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/loading2.gif" />
+                           </image></ImageView>
+                        <Button fx:id="openQRcodeButton" mnemonicParsing="false" onAction="#openQRcodeWindow" prefHeight="34.0" prefWidth="80.0" text="Vergroot">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

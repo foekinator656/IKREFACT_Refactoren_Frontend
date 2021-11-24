@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--
+FXML Template
+
+Dit template bevat het visuele skelet van de Bouncer applicatie.
+In de menu-bar staan twee soorten buttons, een actieve en een inactieve button. Deze zijn gemakkelijk te kopiëren
+Alle vensters zijn 1600*900 pixels.
+
+-->
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsleiden.ipsen2.bouncer.front.views.ModeratorDashboardView">
+   <children>
+      <HBox layoutX="-6.0" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="900.0" prefWidth="288.0" style="-fx-background-color: f7f8fc;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="65.0" translateY="30.0">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <GridPane prefHeight="50.0" prefWidth="276.0" style="-fx-background-color: edeff4;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="0.0" prefWidth="9.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="59.5" />
+                        <ColumnConstraints maxWidth="226.5" minWidth="0.0" prefWidth="219.5" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="BASELINE_LEFT" depthTest="DISABLE" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="295.0" style="-fx-background-color: edeff4; -fx-border-radius: 0; -fx-background-radius: 0; -fx-border-width: 0;" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Button>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f3a304;" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" GridPane.columnIndex="2" />
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 24;" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/icons/dashboard_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="50.0" prefWidth="276.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="0.0" prefWidth="9.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="59.5" />
+                        <ColumnConstraints maxWidth="226.5" minWidth="0.0" prefWidth="219.5" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button alignment="BASELINE_LEFT" depthTest="DISABLE" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="295.0" style="-fx-opacity: 0; -fx-background-radius: 0; -fx-border-width: 0;" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Button>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Users" GridPane.columnIndex="2" />
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 24;" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/icons/user_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Moderator Dashboard">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <VBox maxHeight="495.0" maxWidth="1122.0" minHeight="770.0" minWidth="1122.0" prefHeight="495.0" prefWidth="1122.0" style="-fx-border-color: #DFE0EB; -fx-border-width: 5;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text fx:id="nReqField" strokeType="OUTSIDE" strokeWidth="0.0" text="Requests + aantal">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="32.0" right="690.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TableView fx:id="tabel" accessibleText="k" minHeight="706.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="gebruikersNaamCol" prefWidth="699.0" text="gebruikernaam" />
+                            <TableColumn fx:id="dateCol" minWidth="0.0" prefWidth="296.22216796875" text="Datum" />
+                              <TableColumn fx:id="actionCol" editable="false" prefWidth="126.44439697265625" sortable="false" text="Actions" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

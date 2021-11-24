@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--
+FXML Template
+
+Dit template bevat het visuele skelet van de Bouncer applicatie.
+In de menu-bar staan twee soorten buttons, een actieve en een inactieve button. Deze zijn gemakkelijk te kopiëren
+Alle vensters zijn 1600*900 pixels.
+
+-->
+
+<AnchorPane maxHeight="900.0" maxWidth="1600.0" minHeight="900.0" minWidth="1600.0" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsleiden.ipsen2.bouncer.front.views.RequestReviewView">
+   <children>
+      <HBox layoutX="-6.0" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="900.0" prefWidth="288.0" style="-fx-background-color: f7f8fc;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="65.0" translateY="30.0">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <GridPane prefHeight="50.0" prefWidth="276.0" style="-fx-background-color: edeff4;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="0.0" prefWidth="9.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="59.5" />
+                        <ColumnConstraints maxWidth="226.5" minWidth="0.0" prefWidth="219.5" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="BASELINE_LEFT" depthTest="DISABLE" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="295.0" style="-fx-background-color: edeff4; -fx-border-radius: 0; -fx-background-radius: 0; -fx-border-width: 0;" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Button>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f3a304;" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" GridPane.columnIndex="2" />
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 24;" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/icons/dashboard_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="50.0" prefWidth="276.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="0.0" prefWidth="9.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="59.5" />
+                        <ColumnConstraints maxWidth="226.5" minWidth="0.0" prefWidth="219.5" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button alignment="BASELINE_LEFT" depthTest="DISABLE" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="295.0" style="-fx-opacity: 0; -fx-background-radius: 0; -fx-border-width: 0;" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Button>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Users" GridPane.columnIndex="2" />
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 24;" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/icons/user_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox minHeight="50.0" prefHeight="75.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Request">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="985.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="83.0" prefWidth="1096.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #DFE0EB;">
+                           <children>
+                              <Text fx:id="requestID" strokeType="OUTSIDE" strokeWidth="0.0" text="Request +ID">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="35.0" left="47.0" top="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Button fx:id="terugDashboard" mnemonicParsing="false" onAction="#backToDashboard" text="X">
+                                 <HBox.margin>
+                                    <Insets left="471.0" top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox minHeight="230.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox maxHeight="190.0" maxWidth="417.0" minHeight="190.0" minWidth="417.0" prefHeight="190.0" prefWidth="417.0" style="-fx-border-color: #DFE0EB;">
+                           <HBox.margin>
+                              <Insets left="50.0" top="20.0" />
+                           </HBox.margin>
+                           <children>
+                              <TextField maxHeight="20.0" maxWidth="150.0" minHeight="20.0" minWidth="150.0" prefHeight="20.0" prefWidth="150.0" text="Volledige naam">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="23.0" top="17.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="naamSekswerker" maxHeight="20.0" maxWidth="372.0" minHeight="20.0" minWidth="372.0" prefHeight="20.0" prefWidth="372.0">
+                                 <VBox.margin>
+                                    <Insets left="23.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField maxHeight="20.0" maxWidth="150.0" minHeight="20.0" minWidth="150.0" prefHeight="20.0" prefWidth="150.0" text="Email">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="23.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="emailSekswerker" maxHeight="20.0" maxWidth="372.0" minHeight="20.0" minWidth="372.0" prefHeight="20.0" prefWidth="372.0">
+                                 <VBox.margin>
+                                    <Insets left="23.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField maxHeight="20.0" maxWidth="150.0" minHeight="20.0" minWidth="150.0" prefHeight="20.0" prefWidth="150.0" text="Geboortedatum">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="23.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="sekswerkerGeboorteDatum" maxHeight="20.0" maxWidth="372.0" minHeight="20.0" minWidth="372.0" prefHeight="20.0" prefWidth="372.0">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="23.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="100.0" prefWidth="655.0">
+                           <children>
+                              <Button fx:id="accepteren" maxHeight="39.0" maxWidth="113.0" minHeight="39.0" minWidth="113.0" mnemonicParsing="false" onAction="#acceptRequest" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: #04B500; -fx-opacity: 0.4; -fx-border-radius: 100px;" text="ACCEPTEREN" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="34.0" top="26.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="weigeren" maxHeight="39.0" maxWidth="113.0" minHeight="39.0" minWidth="113.0" mnemonicParsing="false" onAction="#rejectRequest" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: #d00000; -fx-opacity: 0.4;" text="WEIGEREN" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="34.0" top="13.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="idVragen" maxHeight="38.0" maxWidth="163.0" minHeight="38.0" minWidth="163.0" mnemonicParsing="false" onAction="#modAskForID" prefHeight="38.0" prefWidth="163.0" style="-fx-background-color: #0040c0; -fx-opacity: 0.4;" text="ID AANVRAGEN" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="34.0" top="13.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox maxHeight="246.0" maxWidth="633.0" minHeight="246.0" minWidth="633.0" prefHeight="246.0" prefWidth="633.0" style="-fx-border-color: #DFE0EB;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bijgevoegde afbeeldeing">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="38.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <ImageView fx:id="sekswerkerSelfie" fitHeight="222.0" fitWidth="418.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="13.0" left="40.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="50.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox maxHeight="182.0" maxWidth="418.0" minHeight="182.0" minWidth="418.0" prefHeight="182.0" prefWidth="418.0" style="-fx-border-color: #DFE0EB;">
+                           <children>
+                              <TextField maxHeight="20.0" maxWidth="150.0" minHeight="20.0" minWidth="150.0" prefHeight="20.0" prefWidth="150.0" text="Afbeelding metadata">
+                                 <VBox.margin>
+                                    <Insets left="23.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox maxHeight="120.0" maxWidth="153.0" minHeight="120.0" minWidth="153.0" prefHeight="120.0" prefWidth="153.0">
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Naam" textAlignment="RIGHT" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Groote" textAlignment="RIGHT" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bestand-Type" textAlignment="RIGHT" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aanmaakdatum" textAlignment="RIGHT" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BewerkingsDatum" textAlignment="RIGHT" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Camera" textAlignment="RIGHT" />
+                                       </children>
+                                    </VBox>
+                                    <VBox maxHeight="120.0" maxWidth="153.0" minHeight="120.0" minWidth="153.0" prefHeight="120.0" prefWidth="153.0">
+                                       <children>
+                                          <Text fx:id="naamFoto" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                          <Text fx:id="groteVanFoto" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                          <Text fx:id="bestandType" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                          <Text fx:id="aanmaakDatum" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                          <Text fx:id="bewerkingsDatum" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                          <Text fx:id="camera" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox maxHeight="182.0" maxWidth="418.0" minHeight="182.0" minWidth="418.0" prefHeight="182.0" prefWidth="418.0" style="-fx-border-color: #DFE0EB;">
+                           <children>
+                              <TextField maxHeight="24.0" maxWidth="204.0" minHeight="24.0" minWidth="204.0" prefHeight="24.0" prefWidth="204.0" text="Bericht naar gebruiker">
+                                 <VBox.margin>
+                                    <Insets left="23.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="moderatorBericht" maxHeight="133.0" maxWidth="418.0" minHeight="133.0" minWidth="418.0" prefHeight="133.0" prefWidth="418.0" promptText="bericht....">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Button fx:id="stuurBericht" mnemonicParsing="false" text="STUUR">
+                                 <VBox.margin>
+                                    <Insets top="11.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="200.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
